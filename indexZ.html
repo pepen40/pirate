@@ -1,0 +1,56 @@
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <title>игрушка</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Кнопка</title>
+        <style type="text/css">
+            #block {
+                width: 1000px;
+                height: 1000px;
+                border: 0px solid black;
+            }
+            #btn {
+                position: relative;
+                top: 90px;
+                left: 70px;
+                width: 60px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    
+        <body bgcolor="#000" background="apostol.jpg">
+ 
+   
+  
+  
+<h1> клей пва наждачка мухоморы водитель опарыш кочегар кофевар лепешки трухлявый сырок дергачи </h1>
+        <div id="block">
+            <button id="btn">apostol</button>
+            <audio src="loshad1.wav"></audio>
+        </div>
+        <script type="text/javascript">
+            function random(min,max){
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            document.querySelector("#btn").onclick = function(){
+                this.style.top = random(0,1000) + "px"; //180 - высота блока минус высота кнопки
+                this.style.left = random(0,1500) + "px"; //180 - ширина блока минус ширина 
+                }
+
+        </script> 
+        <script>
+document.body.onclick = function() {
+  var audio = new Audio('loshad1.wav');
+  audio.play();
+};
+</script>            
+    </body>
+   
+       
+
+       
+</body>
+</html>
